@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2021 The LineageOS Project
+# Copyright (C) 2020-2021 The VoltageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -88,6 +88,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     android.frameworks.sensorservice@1.0.vendor \
     libcamera2ndk_vendor \
+    libgui_vendor \
+    libstdc++_vendor \
+    libutilscallstack.vendor \    
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
@@ -350,9 +353,12 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
+    libsqlite.vendor \
     libvndfwk_detect_jni.qti.vendor
 
 # Radio
@@ -460,4 +466,6 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
+    libnl \
+    libpng.vendor \
     libwfdaac_vendor
